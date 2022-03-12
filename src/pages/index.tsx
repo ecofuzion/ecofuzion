@@ -6,9 +6,7 @@ import ShutterPage from "../components/ShutterPage";
 // markup
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Home">
       <ShutterPage />
-    </Layout>
   )
 }
 
