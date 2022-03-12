@@ -1,9 +1,17 @@
 import React from "react";
 import './ShutterPage.sass'
 
+// @ts-ignore
+import logo from '../images/logo.png'
+
 
 const ShutterPage = () => {
-    return (<h1>Coming soon</h1>)
+    return (
+        <div className="shutter">
+                <img src={logo} />
+                <h1>Coming soon</h1>
+        </div>
+    )
 }
 
 export default ShutterPage;
