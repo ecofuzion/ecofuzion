@@ -1,4 +1,14 @@
 {
+  "env": {
+    "SHUTTER_ENABLED": {
+      "description": "If true displays the shuttering page for the website",
+      "value": "true"
+    },
+    "DONATE_ENABLED": {
+      "description": "Enables the donate feature",
+      "value": "false"
+    }
+  },
   "buildpacks": [
     {
       "url": "heroku/nodejs"

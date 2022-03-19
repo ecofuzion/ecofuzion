@@ -1,21 +1,46 @@
 import React from 'react'
-import {Link} from "gatsby";
+import {graphql, Link, useStaticQuery} from "gatsby";
 import './Navigation.sass'
 
 // @ts-ignore
 import logo from '../images/logo.png'
+import {FileNode, FrontMatter, Nodes} from "../Types";
 
-interface NavigationParams {
-
+interface Navigation {
+    allFile : Nodes<FileNode<FrontMatter>>
 }
 
 const Navigation = () => {
+    const {allFile} = useStaticQuery<Navigation>(graphql`
+                query NavQuery {
+                  allFile(
+                    filter: {relativeDirectory: {eq: ""}, sourceInstanceName: {eq: "content"}}
+                  ) {
+                    nodes {
+                      id
+                      name
+                      relativeDirectory
+                      sourceInstanceName
+                      childMarkdownRemark {
+                        frontmatter {
+                          slug
+                          title
+                        }
+                      }
+                    }
+                  }
+                }`)
+
     return (
         <nav>
             <img src={logo} />
             <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About</Link></li>
+                {
+                    allFile.nodes.map(({id, childMarkdownRemark}) => {
+                        return <li key={id}><Link to={childMarkdownRemark.frontmatter.slug}>{childMarkdownRemark.frontmatter.title}</Link></li>
+                    })
+                }
+                <li key="projects"><Link to={'/projects'}>Projects</Link></li>
             </ul>
         </nav>
     )
