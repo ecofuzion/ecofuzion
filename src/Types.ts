@@ -8,7 +8,14 @@ export interface FrontMatter {
 export interface ProjectFrontMatter extends FrontMatter {
     projectId : string
     heroImage : any
+    heroText : string
     summary: string
+}
+
+export interface PageFrontMatter extends FrontMatter {
+    heroImage : any
+    heroText : string
+    heroImageAttr : string
 }
 
 export interface Parent {

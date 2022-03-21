@@ -8,7 +8,7 @@ interface CardParams {
 }
 
 const ProjectCard = ({data}: CardParams) => {
-    const heroImage = getImage(data.frontmatter.heroImage)
+    const heroImage : any = getImage(data.frontmatter.heroImage)
 
     return (<article className="card">
         <header>

@@ -27,6 +27,7 @@ const Projects = () => {
                           slug
                           title
                           summary
+                          heroText
                           heroImage {
                             childImageSharp {
                                 gatsbyImageData(width: 200)

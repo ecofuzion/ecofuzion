@@ -3,7 +3,8 @@ const path = require("path")
 exports.createPages = ({ actions, graphql }) => {
     const { createPage } = actions
 
-    const pageTemplate = path.resolve(`src/templates/Template.tsx`)
+    const pageTemplate = path.resolve(`src/templates/PageTemplate.tsx`)
+    const projectTemplate = path.resolve(`src/templates/ProjectTemplate.tsx`)
 
     return graphql(`
     {
@@ -17,6 +18,12 @@ exports.createPages = ({ actions, graphql }) => {
             frontmatter {
               slug
             }
+            parent {
+              ... on File {
+                name
+                relativeDirectory
+              }
+            }
           }
         }
       }
@@ -29,7 +36,7 @@ exports.createPages = ({ actions, graphql }) => {
         return result.data.allMarkdownRemark.edges.forEach(({ node }) => {
             createPage({
                 path: node.frontmatter.slug,
-                component: pageTemplate,
+                component: node.parent.relativeDirectory === "" ? pageTemplate : projectTemplate,
                 context: {
                     // additional data can be passed via context
                     slug: node.frontmatter.slug,
