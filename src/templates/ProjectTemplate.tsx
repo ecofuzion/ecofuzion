@@ -18,7 +18,7 @@ const ProjectTemplate = ({ data } : ProjectTemplateParams) => {
             <h1>{frontmatter.title}</h1>
             <div className="hero">
                 <Img className="hero-image" fluid={frontmatter.heroImage?.childImageSharp.fluid} alt={frontmatter.title}/>
-                <div className="hero-summary">{frontmatter.heroText}</div>
+                <h1 className="hero-summary">{frontmatter.heroText}</h1>
             </div>
             <div className="project-contents" dangerouslySetInnerHTML={{ __html: html }} />
             </article>

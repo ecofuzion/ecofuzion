@@ -32,16 +32,20 @@ const Navigation = () => {
                 }`)
 
     return (
-        <nav>
-            <img src={logo} />
-            <ul>
-                {
-                    allFile.nodes.map(({id, childMarkdownRemark}) => {
-                        return <li key={id}><Link to={childMarkdownRemark.frontmatter.slug}>{childMarkdownRemark.frontmatter.title}</Link></li>
-                    })
-                }
-                <li key="projects"><Link to={'/projects'}>Projects</Link></li>
-            </ul>
+        <nav className="navbar">
+            <div className="logo">ecofuzion</div>
+            <input id="menu-toggle" type="checkbox"/>
+            <label className='menu-button-container' htmlFor="menu-toggle">
+                <div className='menu-button'/>
+            </label>
+            <ul className="menu">
+                    {
+                        allFile.nodes.map(({id, childMarkdownRemark}) => {
+                            return <li key={id}><Link to={childMarkdownRemark.frontmatter.slug}>{childMarkdownRemark.frontmatter.title}</Link></li>
+                        })
+                    }
+                    <li key="projects"><Link to={'/projects'}>Projects</Link></li>
+                </ul>
         </nav>
     )
 }

@@ -1,29 +1,8 @@
+@import "../styles/global";
+
 .page-container {
   max-width: 960px;
   margin: auto auto;
   padding: 16px 16px 16px 16px;
-
-  h1 {
-    font-size: 4em;
-  }
 }
 
-.hero {
-  display: flex;
-  padding: 16px;
-
-  .hero-image {
-    padding: 16px;
-    border-radius: 10px;
-    width: 50vw;
-  }
-
-  .hero-summary {
-    font-size: 2em;
-    font-weight: bold;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 16px;
-  }
-}

@@ -22,8 +22,8 @@ const ProjectCard = ({data}: CardParams) => {
                 {data.frontmatter.summary}
             </div> : null }
         <div className="footer">
-            <a className="readmore-btn" href={data.frontmatter.slug}>Read more</a>
-            { process.env.DONATE_ENABLED === 'true' ? <a className="donate-btn" href={'/donate?projectId=' + data.frontmatter.projectId}>Donate now</a> : null }
+            <a className="btn btn-primary" href={data.frontmatter.slug}>Read more</a>
+            { process.env.DONATE_ENABLED === 'true' ? <a className="btn btn-primary btn-donate" href={'/donate?projectId=' + data.frontmatter.projectId}>Donate now</a> : null }
         </div>
     </article>)
 }

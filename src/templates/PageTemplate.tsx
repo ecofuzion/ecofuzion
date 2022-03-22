@@ -17,7 +17,7 @@ const PageTemplate = ({ data } : PageTemplateParams) => {
             <article className="page-container">
                 <div className="hero">
                     <Img className="hero-image" fluid={frontmatter.heroImage?.childImageSharp.fluid} alt={frontmatter.title}/>
-                    <div className="hero-summary">{frontmatter.heroText}</div>
+                    <h1 className="hero-summary">{frontmatter.heroText}</h1>
                 </div>
                 <div className="page-contents" dangerouslySetInnerHTML={{ __html: html }} />
             </article>
