@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout";
 import {MarkdownFile, PageFrontMatter} from "../Types";
-import './PageTemplate.sass'
+import './PageTemplate.scss'
 import Img from "gatsby-image";
 
 interface PageTemplateParams {

@@ -1,6 +1,6 @@
 import React from 'react'
 import {graphql, Link, useStaticQuery} from "gatsby";
-import './Navigation.sass'
+import './Navigation.scss'
 
 // @ts-ignore
 import logo from '../images/logo.png'

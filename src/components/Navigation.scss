@@ -1,0 +1,45 @@
+@import '../styles/global';
+
+nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100%;
+  border-bottom: $primary-color solid 5px;
+  height: 80px;
+  z-index: 3;
+  background-color: white;
+
+  img {
+    height: 60px;
+    padding: 10px;
+  }
+
+  ul {
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-end;
+    list-style-type: none;
+    width: 100%;
+    padding-right: 15px;
+
+    li {
+      float: left;
+
+      a {
+        display: block;
+        text-decoration: none;
+        font-family: $font-family;
+        color: $primary-color;
+        padding: 8px 15px 8px 8px;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 700;
+
+        &:hover {
+          color: $secondary-color
+        }
+      }
+    }
+  }
+}

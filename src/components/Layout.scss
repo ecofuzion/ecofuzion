@@ -1,0 +1,22 @@
+@import "../styles/global";
+
+.parallax {
+  perspective: 1px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-image: url('../static/sequoia.jpeg');
+  height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -2;
+
+  &.start {
+    height: 180px;
+  }
+}
+
+

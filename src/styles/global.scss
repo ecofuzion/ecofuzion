@@ -1,0 +1,17 @@
+$primary-color: #5D9943;
+$secondary-color: #79d453;
+$primary-text-color: #586B4F;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+// Font Variables
+$font-family: Inter, sans-serif;
+
+body, html {
+  height: 100vh;
+  font-family: $font-family;
+  color: $primary-text-color;
+  padding: 0;
+  margin: 0;
+  -webkit-text-size-adjust: 100%;
+}

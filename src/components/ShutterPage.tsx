@@ -1,5 +1,5 @@
 import React from "react";
-import './ShutterPage.sass'
+import './ShutterPage.scss'
 
 // @ts-ignore
 import logo from '../images/logo.png'

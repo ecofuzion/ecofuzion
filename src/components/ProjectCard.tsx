@@ -1,5 +1,5 @@
 import React from 'react'
-import './ProjectCard.sass'
+import './ProjectCard.scss'
 import {MarkdownFile, ProjectFrontMatter} from "../Types";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 

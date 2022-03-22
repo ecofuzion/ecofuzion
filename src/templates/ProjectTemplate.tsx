@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout";
 import {MarkdownFile, ProjectFrontMatter} from "../Types";
-import './ProjectTemplate.sass'
+import './ProjectTemplate.scss'
 import Img from "gatsby-image";
 
 interface ProjectTemplateParams {
@@ -16,7 +16,7 @@ const ProjectTemplate = ({ data } : ProjectTemplateParams) => {
         <Layout pageTitle={frontmatter.title}>
             <article className="project-container">
             <h1>{frontmatter.title}</h1>
-            <div>
+            <div className="hero">
                 <Img className="hero-image" fluid={frontmatter.heroImage?.childImageSharp.fluid} alt={frontmatter.title}/>
                 <div className="hero-summary">{frontmatter.heroText}</div>
             </div>
