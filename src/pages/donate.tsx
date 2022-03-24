@@ -1,5 +1,5 @@
 import React from 'react';
-import './donate.sass'
+import './donate.scss'
 import ShutterPage from "../components/ShutterPage";
 
 

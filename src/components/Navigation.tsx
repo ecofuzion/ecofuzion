@@ -5,6 +5,7 @@ import './Navigation.scss'
 // @ts-ignore
 import logo from '../images/logo.png'
 import {FileNode, FrontMatter, Nodes} from "../Types";
+import {Features} from "../Features";
 
 interface Navigation {
     allFile : Nodes<FileNode<FrontMatter>>
@@ -14,7 +15,11 @@ const Navigation = () => {
     const {allFile} = useStaticQuery<Navigation>(graphql`
                 query NavQuery {
                   allFile(
-                    filter: {relativeDirectory: {eq: ""}, sourceInstanceName: {eq: "content"}}
+                    filter: {
+                        relativeDirectory: {eq: ""}, 
+                        sourceInstanceName: {eq: "content"},
+                        childMarkdownRemark: {frontmatter: {order: {ne: null}}}
+                    }
                   ) {
                     nodes {
                       id
@@ -44,7 +49,7 @@ const Navigation = () => {
                             return <li key={id}><Link to={childMarkdownRemark.frontmatter.slug}>{childMarkdownRemark.frontmatter.title}</Link></li>
                         })
                     }
-                    <li key="projects"><Link to={'/projects'}>Projects</Link></li>
+                    { Features.isProjectsEnabled ? <li key="projects"><Link to={'/projects'}>Projects</Link></li> : null }
                 </ul>
         </nav>
     )

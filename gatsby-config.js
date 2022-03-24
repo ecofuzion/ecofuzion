@@ -2,7 +2,7 @@
 module.exports = {
   siteMetadata: {
     title: `ecofuzion`,
-    siteUrl: `https://www.ecofuzion.com`
+    siteUrl: `https://www.ecofuzion.co.uk`
   },
   plugins: [
       "gatsby-plugin-sass",

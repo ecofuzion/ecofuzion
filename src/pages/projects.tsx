@@ -1,8 +1,8 @@
 import * as React from "react"
-import './projects.sass'
+import './projects.scss'
 import Layout from "../components/Layout";
-import {FileNode, MarkdownFile, Nodes, ProjectFrontMatter} from "../Types";
-import {graphql, Link, useStaticQuery} from "gatsby";
+import {FileNode, Nodes, ProjectFrontMatter} from "../Types";
+import {graphql, useStaticQuery} from "gatsby";
 import ProjectCard from "../components/ProjectCard";
 
 interface Projects {

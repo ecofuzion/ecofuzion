@@ -6,10 +6,11 @@ $primary-color: #5D9943;
 $secondary-color: #79d453;
 $primary-text-color: #232323;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Lato:wght@300;400;700&display=swap');
 
 // Font Variables
-$font-family: Inter, sans-serif;
+$font-family: Lato, sans-serif;
+$header-family: 'Cormorant', serif;
 
 *,
 *::after,
@@ -23,8 +24,29 @@ body, html {
   height: 100vh;
   font-family: $font-family;
   color: $primary-text-color;
-  font-size: 100%;
+  font-size: 1.2em;
+  line-height: 1.5em;
   -webkit-text-size-adjust: 100%;
+
+  @include media(">phone", "<=tablet") {
+    font-size: 1em;
+  }
+}
+
+h1, h2, h3 {
+  line-height: 2em;
+  margin-top: 0.7em;
+  margin-bottom: 0.5em;
+  font-family: $header-family;
+
+  @include media(">phone", "<=tablet") {
+    line-height: 1.4em;
+  }
+}
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .btn {
@@ -52,6 +74,7 @@ body, html {
   display: flex;
   padding: 16px;
   align-items: center;
+  margin-bottom: 20px;
 
   .hero-image {
     padding: 16px;

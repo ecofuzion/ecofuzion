@@ -3,6 +3,8 @@ import {Helmet} from "react-helmet";
 import Navigation from "./Navigation";
 import './Layout.scss'
 import Footer from "./Footer";
+import ShutterPage from "./ShutterPage";
+import {Features} from "../Features";
 
 
 interface LayoutParams {
@@ -11,7 +13,7 @@ interface LayoutParams {
 }
 
 const Layout = ({ pageTitle, children } : LayoutParams) => {
-    return (
+    return (Features.isShuttered ? <ShutterPage /> :
         <div>
             <Helmet>
                 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -19,9 +21,9 @@ const Layout = ({ pageTitle, children } : LayoutParams) => {
             </Helmet>
             <Navigation />
             <main>
-                <div className="start parallax"></div>
+                <div className="start parallax"/>
                 {children}
-                <div className="parallax"></div>
+                <div className="parallax"/>
             </main>
             <Footer />
         </div>
