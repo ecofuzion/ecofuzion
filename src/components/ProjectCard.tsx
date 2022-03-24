@@ -2,6 +2,7 @@ import React from 'react'
 import './ProjectCard.scss'
 import {MarkdownFile, ProjectFrontMatter} from "../Types";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import {Features} from "../Features";
 
 interface CardParams {
     data: MarkdownFile<ProjectFrontMatter>
