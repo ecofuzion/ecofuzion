@@ -26,7 +26,7 @@ query HomePageQuery {
         heroText
         heroImage {
           childImageSharp {
-              fluid(maxWidth: 480, maxHeight: 480, quality: 100) {
+              fluid {
               ...GatsbyImageSharpFluid
             }
           }

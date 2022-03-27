@@ -28,8 +28,9 @@ body, html {
   line-height: 1.5em;
   -webkit-text-size-adjust: 100%;
 
-  @include media(">phone", "<=tablet") {
+  @include media("<=tablet") {
     font-size: 1em;
+    line-height: unset;
   }
 }
 
@@ -79,7 +80,7 @@ p {
   .hero-image {
     padding: 16px;
     border-radius: 10px;
-    width: 50vw;
+    width: 50%;
   }
 
   .hero-summary {
