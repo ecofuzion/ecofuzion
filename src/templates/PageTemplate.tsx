@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout";
 import {MarkdownFile, PageFrontMatter} from "../Types";
 import './PageTemplate.scss'
-import Img from "gatsby-image";
+import {GatsbyImage} from "gatsby-plugin-image";
 
 interface PageTemplateParams {
     data : {markdownRemark: MarkdownFile<PageFrontMatter>}
@@ -16,7 +16,7 @@ const PageTemplate = ({ data } : PageTemplateParams) => {
         <Layout pageTitle={frontmatter.title}>
             <article className="page-container">
                 <div className="hero">
-                    <Img className="hero-image" fluid={frontmatter.heroImage?.childImageSharp.fluid} alt={frontmatter.title}/>
+                    <GatsbyImage className="hero-image" image={frontmatter.heroImage?.childImageSharp.gatsbyImageData} alt={frontmatter.title}/>
                     <h1 className="hero-summary">{frontmatter.heroText}</h1>
                 </div>
                 <div className="page-contents" dangerouslySetInnerHTML={{ __html: html }} />
@@ -38,9 +38,12 @@ export const query = graphql`
         heroText
         heroImage {
           childImageSharp {
-              fluid(maxWidth: 480, maxHeight: 480, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
+              gatsbyImageData(
+                width: 350
+                layout: CONSTRAINED
+                placeholder: BLURRED
+                formats: [AUTO, WEBP, AVIF]
+              )
           }
         }
         heroImageAttr

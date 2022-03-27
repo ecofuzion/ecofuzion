@@ -1,9 +1,9 @@
 ---
 slug: "/home"
 title: "Home"
-heroText: "Scale projects that are striving to combat climate change and ultimately repair the Earth."
-heroImage: ./images/oak-tree.jpeg
-heroImageAttr: "Photo by <a href='https://unsplash.com/@simonfromengland?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Simon Wilkes</a> on <a href='https://unsplash.com/s/photos/oak-tree?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a>"
+heroText: "Scaling up existing eco projects to combat climate change."
+heroImage: ./images/logo.png
+heroImageAttr: ""
 order: 1
 ---
 
@@ -11,7 +11,7 @@ order: 1
 Ecofuzion is inspired by 'The Earthshot Prize' which highlighted 15 projects that are repairing our planet. These are, at present, small-scale operations with little funding.
 
 # THE HOW
-At Ecofuzion we source investment to help scale up these, and other similar, projects so that they can make a significant positive impact on our precious planet.
+At Ecofuzion we source investment to help scale up these, and other similar projects, so that they can make a significant impact on our precious planet.
 
 We work with the eco projects to fully understand how they work at present and what impact they are currently making. Together, we create a vision of how they can be expanded and what impact they expect to have, along with detailed costings.
 
