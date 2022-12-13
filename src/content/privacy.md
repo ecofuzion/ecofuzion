@@ -17,7 +17,7 @@ Please read this privacy policy carefully.
     Ecofuzion Ltd, we, or, us Ecofuzion Ltd, a company incorporated in England and Wales with registered number 13720552 whose registered office is at 40 GREENHILLS ROAD, NORTHAMPTON, NORTHAMPTONSHIRE,  NN2 8EF;
     * **UK and EU Cookie Law** - the Privacy and Electronic Communications (EC Directive) Regulations 2003 as amended by the Privacy and Electronic Communications (EC Directive) (Amendment) Regulations 2011 & the Privacy and Electronic Communications (EC Directive) (Amendment) Regulations 2018;
     * **User or you** - any third party that accesses the Website and is not either (i) employed by Ecofuzion Ltd and acting in the course of their employment or (ii) engaged as a consultant or otherwise providing services to Ecofuzion Ltd and accessing the Website in connection with the provision of such services; and
-    * **Website** - the website that you are currently using, https://ecofuzion.herokuapp.com/, and any sub-domains of this site unless expressly excluded by their own terms and conditions.
+    * **Website** - the website that you are currently using, https://www.ecofuzion.co.uk/, and any sub-domains of this site unless expressly excluded by their own terms and conditions.
     
 
 2. In this privacy policy, unless the context requires a different interpretation:
