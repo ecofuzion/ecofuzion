@@ -18,8 +18,3 @@ We work with the eco projects to fully understand how they work at present and w
 Ecofuzion present this information to businesses and individual investors. Companies are able to advertise their support of their chosen eco project and show to their customers and investors how they are helping to fight climate change and repair the Earth.
 
 In this important decade businesses are aware that they need to be doing everything they can to have a positive impact on the planet. They will be able to announce to the world that they are part of the green revolution.
-
-# THE FINANCE
-The invested money is held in Escro. Ecofuzion drip feed the money to the projects in quarterly installments.  Only once evidence is shown how the money has been used do we release the next quarter of funds.
-
-The eco projects may be at home or abroad, we are there to make sure the money goes to the right place and has the greatest impact.
