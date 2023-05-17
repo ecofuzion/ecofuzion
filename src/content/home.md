@@ -8,13 +8,18 @@ order: 1
 ---
 
 # WHAT IS ECOFUZION?
-Ecofuzion is inspired by 'The Earthshot Prize' which highlighted 15 projects that are repairing our planet. These are, at present, small-scale operations with little funding.
+Ecofuzion supports eco-project growth by finding and connecting passionate investors with creators of solutions that will repair our planet.  
 
-# THE HOW
-At Ecofuzion we source investment to help scale up these, and other similar projects, so that they can make a significant impact on our precious planet.
+# HOW
+We will work with you on your eco-project to fully understand how you work and what impact you are currently making on the environment. Together, we create a vision of how you can expand and what impact this may have, along with detailed costings. 
 
-We work with the eco projects to fully understand how they work at present and what impact they are currently making. Together, we create a vision of how they can be expanded and what impact they expect to have, along with detailed costings.
+Our mission and expertise at Ecofuzion is sourcing investment for your eco-project. We connect you with the businesses and individual investors that will help scale up your work and drive growth, helping you to continue to make a significant impact on our precious planet. 
 
-Ecofuzion present this information to businesses and individual investors. Companies are able to advertise their support of their chosen eco project and show to their customers and investors how they are helping to fight climate change and repair the Earth.
+In this decade, businesses are increasingly aware of and prioritising the role they play in climate change, with cooperate social responsibility a key focus in helping sustain this planet for generations to come. Businesses and investors looking to support eco-projects will advertise their support for your eco-project, not only helping raise the profile of your project, but showing how they are helping to fight climate change and repair the Earth. 
 
-In this important decade businesses are aware that they need to be doing everything they can to have a positive impact on the planet. They will be able to announce to the world that they are part of the green revolution.
+# WHY
+Ecofuzion is inspired by 'The Earthshot Prize' which highlighted 15 projects that are repairing our planet, along with a dedicated passion to help combat climate change. 
+
+# CONTACT
+For any enquires please contact [lisa@ecofuzion.co.uk](mailto:lisa@ecofuzion.co.uk)
+
